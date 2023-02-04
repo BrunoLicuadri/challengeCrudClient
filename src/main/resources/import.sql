@@ -1,5 +1,5 @@
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Aline Tonon Oliveira', 12365478915, 3500.00, '1982-01-30', 2);
-INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Ellen Everett Poetry', 15975368425, 2750.00, '1983-02-30', 4);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Ellen Everett Poetry', 15975368425, 2750.00, '1983-02-21', 4);
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Kayla Marie Sully', 25874136982, 3200.00, '1983-03-30', 2);
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Linde Huez', 78932145687, 2850.00, '1984-04-30', 1);
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Tyre Nichols', 48635172934, 4500.00, '1985-05-30', 2);
@@ -8,4 +8,4 @@ INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Lando N
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Pierre Gasly', 25875365987, 25000.00, '1988-08-30', 1);
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Matheus Werner', 48635724925, 5500.00, '1989-09-30', 3);
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Paula Gabriela', 3597516423, 8500.00, '1990-10-30', 3);
-INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Daniel Ridley', 17393740955, 1500.00, '1992-02-30', 0);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Daniel Ridley', 17393740955, 1500.00, '1992-02-15', 0);
