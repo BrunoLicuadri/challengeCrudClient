@@ -5,6 +5,7 @@ import com.godknows.challengeCrudClient.dto.ClientDTO;
 import com.godknows.challengeCrudClient.entities.Client;
 import com.godknows.challengeCrudClient.repositories.ClientRepository;
 import com.godknows.challengeCrudClient.services.ClientService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.data.domain.Page;
@@ -37,14 +38,14 @@ public class ClientController {
     }
 
     @PostMapping
-    public ResponseEntity<ClientDTO> insert (@RequestBody ClientDTO dto){
+    public ResponseEntity<ClientDTO> insert (@Valid @RequestBody ClientDTO dto){
         dto = cliService.insert(dto);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(dto.getId()).toUri();
         return ResponseEntity.created(uri).body(dto);
     }
 
     @PutMapping(value="/{id}")
-    public ResponseEntity<ClientDTO> update (@PathVariable Long id, @RequestBody ClientDTO dto){
+    public ResponseEntity<ClientDTO> update (@PathVariable Long id, @Valid @RequestBody ClientDTO dto){
         dto = cliService.update(id, dto);
         return ResponseEntity.ok(dto);
     }

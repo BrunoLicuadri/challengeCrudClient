@@ -2,15 +2,21 @@ package com.godknows.challengeCrudClient.dto;
 
 import com.godknows.challengeCrudClient.entities.Client;
 import com.godknows.challengeCrudClient.services.ClientService;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PastOrPresent;
 
 import java.time.LocalDate;
 
 public class ClientDTO {
 
     private Long id;
+
+    @NotBlank(message = "Campo obrigatório.")
     private String name;
     private String cpf;
     private Double income;
+
+    @PastOrPresent(message = "Data não pode ser futura.")
     private LocalDate birthDate;
     private Integer children;
 
